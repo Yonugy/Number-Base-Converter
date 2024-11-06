@@ -1,11 +1,11 @@
 #Change to base ten
 num=input('Number: ')
-asas=int(input('Asas: '))
+base=int(input('Base: '))
 list=[]
 for i in range(len(num)):
     number=int(num[i])
-    value=number*(asas**(len(num)-i-1))
-    print(number,'x',asas,'^',len(num)-i-1,'=',value)
+    value=number*(base**(len(num)-i-1))
+    print(number,'x',base,'^',len(num)-i-1,'=',value)
     list.append(value)
 result=0
 for i in list:
