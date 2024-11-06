@@ -1,12 +1,12 @@
 #Change to base ten to other base
-num=int(input('Nombor asas sepuluh: '))
-asas=int(input('Tukar kepada asas: '))
+num=int(input('Number in base ten: '))
+base=int(input('Change to base: '))
 list=[]
 print(num)
 while num!=0:
-    print(num//asas,'-',num%asas)
-    list.insert(0,num%asas)
-    num=num//asas
+    print(num//base,'-',num%base)
+    list.insert(0,num%base)
+    num=num//base
 for i in list:
     print(i,end='')
 print()
